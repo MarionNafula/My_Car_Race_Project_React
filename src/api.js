@@ -5,3 +5,12 @@ export const getDrivers = async () => {
     return response.json();
   };
 
+  export const addDriver = async (driver) => {
+    const response = await fetch(`${BASE_URL}/drivers`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(driver),
+    });
+    return response.json();
+  };
+
