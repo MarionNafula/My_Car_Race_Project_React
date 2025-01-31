@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import Drivers from "./pages/Drivers";
-import Circuits from "./pages/Circuits";
-import Stats from "./pages/Stats";
+import Navbar from "./components/Navbar.jsx";
+import Home from "./pages/Home.jsx";
+import Drivers from "./pages/ Drivers.jsx"; 
+import Circuits from "./pages/Circuits.jsx";
+import Stats from "./pages/Stats.jsx";
 
 const App = () => {
   return (
