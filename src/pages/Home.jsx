@@ -5,21 +5,27 @@ const cars = [
   {
     id: 1,
     name: "Ferrari SF90",
-    image: "/images/ferrari.jpg",
+    image: "src/assets/black-4340959_640.jpg",
     description: "A powerful Formula 1 car from Ferrari.",
   },
   {
     id: 2,
     name: "Mercedes W14",
-    image: "/images/mercedes.jpg",
+    image: "src/assets/purple-4384879_640.jpg",
     description: "A dominant car used in F1 races.",
   },
   {
     id: 3,
     name: "Red Bull RB19",
-    image: "/images/redbull.jpg",
+    image: "src/assets/race-car-7275811_640.jpg",
     description: "An aerodynamically advanced race car.",
   },
+  {
+    id: 4,
+    name: "Green Bull RB19",
+    image: "src/assets/race-car-7624025_640.jpg",
+    description: "An aerodynamically advanced race car.",
+  }
 ];
 
 const Home = () => {
