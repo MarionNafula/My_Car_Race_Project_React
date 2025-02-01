@@ -81,7 +81,7 @@ const Home = () => {
     <div className="home p-6 text-center">
       {/* Project Description Section */}
       <section className="mb-8 p-6 bg-gray-100 shadow-md rounded-lg">
-        <h1 className="text-3xl font-bold text-gray-800"> Welcome to Car Race!</h1>
+        <h1 className="text-xl font-bold text-gray-800  text-center"> Welcome to Car Race!</h1>
         <p className="text-lg text-gray-600 mt-4">
           This is your ultimate racing hub where you can explore the 
           most advanced race cars, circuits, and drivers in the world of motorsports.   
@@ -93,7 +93,7 @@ const Home = () => {
       <SearchBar />
 
       {/* Car Cards Section */}
-      <h2 className="text-2xl font-semibold text-gray-700 my-6"> Featured Race Cars</h2>
+      <h2 className="text-2xl font-semibold text-gray-700 my-6  text-center"> Featured Race Cars</h2>
       <div className="card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {cars.map((car) => (
           <Card
