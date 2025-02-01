@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import Card from "../components/Card";
-import SearchBar from "../components/SearchBar"; // ✅ Import SearchBar
+import SearchBar from "../components/SearchBar"; // Importing Search Bar
 
 const cars = [
   {
@@ -26,38 +26,42 @@ const cars = [
     name: "Green Bull RB19",
     image: "src/assets/race-car-7624025_640.jpg",
     description: "An aerodynamically advanced race car.",
+  },
+  {
+    id: 4,
+    name: "Green Bull RB19",
+    image: "src/assets/race-car-7624025_640.jpg",
+    description: "An aerodynamically advanced race car.",
   }
 ];
 
 const Home = () => {
-  const [filteredCars, setFilteredCars] = useState(cars);
-
-  // ✅ Function to handle search filtering
-  const handleSearch = (query) => {
-    const results = cars.filter((car) =>
-      car.name.toLowerCase().includes(query.toLowerCase())
-    );
-    setFilteredCars(results);
-  };
-
   return (
-    <div className="home p-4">
-      <h1 className="text-2xl font-bold text-center mb-4">Welcome to Car Race</h1>
+    <div className="home p-6 text-center">
+      {/* Project Description Section */}
+      <section className="mb-8 p-6 bg-gray-100 shadow-md rounded-lg">
+        <h1 className="text-3xl font-bold text-gray-800">🏎️ Welcome to Car Race!</h1>
+        <p className="text-lg text-gray-600 mt-4">
+          This is your ultimate racing hub where you can explore the 
+          most advanced race cars, circuits, and drivers in the world of motorsports.   
+          Track your favorite teams, explore legendary circuits, and stay updated with real-time race stats!
+        </p>
+      </section>
 
-      {/* ✅ SearchBar Component */}
-      <div className="flex justify-center mb-4">
-        <SearchBar onSearch={handleSearch} />
-      </div>
+      {/* Search Bar */}
+      <SearchBar />
 
-      {/* ✅ Card Display */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {filteredCars.length > 0 ? (
-          filteredCars.map((car) => (
-            <Card key={car.id} image={car.image} name={car.name} description={car.description} />
-          ))
-        ) : (
-          <p className="text-center text-gray-500">No cars found</p>
-        )}
+      {/* Car Cards Section */}
+      <h2 className="text-2xl font-semibold text-gray-700 my-6"> Featured Race Cars</h2>
+      <div className="card-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {cars.map((car) => (
+          <Card
+            key={car.id}
+            image={car.image}
+            name={car.name}
+            description={car.description}
+          />
+        ))}
       </div>
     </div>
   );
