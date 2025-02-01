@@ -81,7 +81,7 @@ const Home = () => {
     <div className="home p-6 text-center">
       {/* Project Description Section */}
       <section className="mb-8 p-6 bg-gray-100 shadow-md rounded-lg">
-        <h1 className="text-3xl font-bold text-gray-800">🏎️ Welcome to Car Race!</h1>
+        <h1 className="text-3xl font-bold text-gray-800"> Welcome to Car Race!</h1>
         <p className="text-lg text-gray-600 mt-4">
           This is your ultimate racing hub where you can explore the 
           most advanced race cars, circuits, and drivers in the world of motorsports.   
