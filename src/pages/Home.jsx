@@ -28,9 +28,50 @@ const cars = [
     description: "An aerodynamically advanced race car.",
   },
   {
-    id: 4,
+    id: 5,
     name: "Green Bull RB19",
-    image: "src/assets/race-car-7624025_640.jpg",
+    image: "src/assets/race-track-7185981_640.jpg",
+    description: "An aerodynamically advanced race car.",
+  },
+  {
+    id: 6,
+    name: "Green Bull RB19",
+    image: "src/assets/race-car-7611837_640.jpg",
+    description: "An aerodynamically advanced race car.",
+  },
+  {
+    id: 7,
+    name: "Green Bull RB19",
+    image: "src/assets/concept-car-7639258_640.jpg",
+    description: "An aerodynamically advanced race car.",
+  },
+  {
+    id: 8,
+    name: "Green Bull RB19",
+    image: "src/assets/ai-generated-8517349_640.png",
+    description: "An aerodynamically advanced race car.",
+  },
+  {id: 9,
+    name: "Green Bull RB19",
+    image: "src/assets/ai-generated-8625993_640.png",
+    description: "An aerodynamically advanced race car.",
+  },
+  {
+    id: 10,
+    name: "Green Bull RB19",
+    image: "src/assets/ai-generated-8626109_640.png",
+    description: "An aerodynamically advanced race car.",
+  },
+  {
+    id: 11,
+    name: "Green Bull RB19",
+    image: "src/assets/car-racing-4394450_640.jpg",
+    description: "An aerodynamically advanced race car.",
+  },
+  {
+    id: 12,
+    name: "Green Bull RB19",
+    image: "src/assets/car-racing-6555355_640.jpg",
     description: "An aerodynamically advanced race car.",
   }
 ];
