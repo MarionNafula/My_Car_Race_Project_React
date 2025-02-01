@@ -1,28 +1,28 @@
-import { useState } from "react";
+import React, { useState } from "react";
+import { FaSearch } from "react-icons/fa";
 
 const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState("");
 
-  const handleSearch = () => {
-    if (query.trim() !== "") {
-      onSearch(query);
-    }
+  const handleChange = (e) => {
+    setQuery(e.target.value);
+    onSearch(e.target.value);
   };
 
   return (
-    <div className="flex items-center gap-2 p-2 bg-gray-200 rounded-md">
+    <div className="flex items-center bg-white shadow-lg rounded-full p-2 w-full max-w-lg border-2 border-gray-200 hover:border-blue-500 transition duration-300">
       <input
         type="text"
-        placeholder="Search..."
-        className="p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
         value={query}
-        onChange={(e) => setQuery(e.target.value)}
+        onChange={handleChange}
+        placeholder="Search cars..."
+        className="w-full px-4 py-2 rounded-full outline-none text-gray-700 focus:ring-2 focus:ring-blue-500"
       />
       <button
-        onClick={handleSearch}
-        className="p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
+        className="flex items-center justify-center bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white px-5 py-2 rounded-full ml-2 transition duration-300 transform hover:scale-105 active:scale-95 shadow-md"
       >
-        Search
+        <FaSearch className="text-lg" />
+        <span className="ml-2 font-semibold">Search</span>
       </button>
     </div>
   );
