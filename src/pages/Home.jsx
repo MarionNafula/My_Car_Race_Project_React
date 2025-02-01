@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../components/Card";
-import SearchBar from "../components/SearchBar";
+import SearchBar from "../components/SearchBar"; // ✅ Import SearchBar
 
 const cars = [
   {
@@ -30,18 +30,34 @@ const cars = [
 ];
 
 const Home = () => {
+  const [filteredCars, setFilteredCars] = useState(cars);
+
+  // ✅ Function to handle search filtering
+  const handleSearch = (query) => {
+    const results = cars.filter((car) =>
+      car.name.toLowerCase().includes(query.toLowerCase())
+    );
+    setFilteredCars(results);
+  };
+
   return (
-    <div className="home">
-      <h1>Welcome to Car Race</h1>
-      <div className="card-container">
-        {cars.map((car) => (
-          <Card
-            key={car.id}
-            image={car.image}
-            name={car.name}
-            description={car.description}
-          />
-        ))}
+    <div className="home p-4">
+      <h1 className="text-2xl font-bold text-center mb-4">Welcome to Car Race</h1>
+
+      {/* ✅ SearchBar Component */}
+      <div className="flex justify-center mb-4">
+        <SearchBar onSearch={handleSearch} />
+      </div>
+
+      {/* ✅ Card Display */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {filteredCars.length > 0 ? (
+          filteredCars.map((car) => (
+            <Card key={car.id} image={car.image} name={car.name} description={car.description} />
+          ))
+        ) : (
+          <p className="text-center text-gray-500">No cars found</p>
+        )}
       </div>
     </div>
   );
