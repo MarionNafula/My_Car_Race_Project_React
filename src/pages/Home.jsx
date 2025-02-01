@@ -69,7 +69,7 @@ const cars = [
   },
   {
     id: 12,
-    name: "SUV Racer",
+    name: "Blue Bull RB19",
     image: "src/assets/car-racing-6555355_640.jpg",
     description: "The car of the future.",
   }
