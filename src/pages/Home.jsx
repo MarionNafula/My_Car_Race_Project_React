@@ -1,6 +1,5 @@
 import React from "react";
 import Card from "../components/Card";
-import SearchBar from "../components/SearchBar"; // Importing Search Bar
 
 const cars = [
   {
@@ -88,9 +87,6 @@ const Home = () => {
           Track your favorite teams, explore legendary circuits, and stay updated with real-time race stats!
         </p>
       </section>
-
-      {/* Search Bar */}
-      <SearchBar />
 
       {/* Car Cards Section */}
       <h2 className="text-2xl font-semibold text-gray-700 my-6  text-center"> Featured Race Cars</h2>
