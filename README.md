@@ -21,33 +21,33 @@ Car Race App is a web application that provides an ultimate hub for motorsports 
 - Yup (Schema-based validation)
 
 ## Project Structure
-> .gitignore
-index.html
-package.json
-public/
-    assets/
-src/
-    api.js
-    App.jsx
-    assets/
-    components/
-        Card.jsx
-        CircuitForm.jsx
-        CircuitList.jsx
-        DriverForm.jsx
-        DriverList.jsx
-        Footer.jsx
-        Navbar.jsx
-        SearchBar.jsx
-    counter.js
-    main.jsx
-    pages/
-        Drivers.jsx
-        Circuits.jsx
-        Home.jsx
-        Stats.jsx
-    style.css
-vite.config.js
+-  .gitignore
+- index.html
+- package.json
+- public/
+    - assets/
+- src/
+    - api.js
+    - App.jsx
+    - assets/
+    - components/
+        - Card.jsx
+        - CircuitForm.jsx
+        - CircuitList.jsx
+        - DriverForm.jsx
+        - DriverList.jsx
+        - Footer.jsx
+        - Navbar.jsx
+        - SearchBar.jsx
+    - counter.js
+    - main.jsx
+    - pages/
+        - Drivers.jsx
+        - Circuits.jsx
+        - Home.jsx
+        - Stats.jsx
+    - style.css
+- vite.config.js
 
 ## Installation
 1. Clone the repository:
@@ -69,7 +69,7 @@ vite.config.js
 - Use the search bar to find specific content
 
 ## API Endpoints
-The app interacts with a backend server to fetch and add data. The API endpoints are defined in ---api.js
+The app interacts with a backend server to fetch and add data. The API endpoints are defined in api.js
 
 - Drivers:
 - GET /drivers: Fetch all drivers.
@@ -96,10 +96,10 @@ The app interacts with a backend server to fetch and add data. The API endpoints
 - Stats: Page with an overview of racing statistics.
 
 ## Styling
-The app uses a custom CSS file for styling. The styles are defined in #style.css.
+The app uses a custom CSS file for styling. The styles are defined in style.css.
 
 ## Configuration
-The app uses Vite for development and build configuration. The configuration is defined in ---vite.config.js.
+The app uses Vite for development and build configuration. The configuration is defined in vite.config.js.
 
 ## Backend
 The backend site can be viewed at [Backend Site URL](http://your-backend-site-url.com).
