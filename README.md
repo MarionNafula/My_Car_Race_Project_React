@@ -54,13 +54,17 @@ Car Race App is a web application that provides an ultimate hub for motorsports 
 `git clone git@github.com:MarionNafula/My_Car_Race_Project_React.git`
 `cd car-race-app`
 
-2. Install dependencies:
+2. Clone the backend repository:
+` git clone git@github.com:MarionNafula/My_Car_Race_Project.git` 
+` cd My_Car_Race_Project`
+
+3. Install dependencies:
 `npm install`
 
-3. Start the development server:
+4. Start the development server:
 `npm run dev`
 
-4. Open your browser and navigate to http://localhost:5173.
+5. Open your browser and navigate to http://localhost:5173.
 
 ## Usage
 - Navigate through different pages using the navbar.
