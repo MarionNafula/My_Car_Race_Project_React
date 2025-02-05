@@ -105,8 +105,9 @@ The app uses a custom CSS file for styling. The styles are defined in style.css.
 ## Configuration
 The app uses Vite for development and build configuration. The configuration is defined in vite.config.js.
 
-## Backend
-The backend site can be viewed at [https://my-car-race-project.onrender.com]
+## Backend API
+The backend API can be viewed at [https://my-car-race-project.onrender.com]
+Backend repository `git@github.com:MarionNafula/My_Car_Race_Project.git`
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
